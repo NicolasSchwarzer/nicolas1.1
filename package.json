@@ -1,0 +1,26 @@
+{
+  "name": "nicolas1.1",
+  "version": "1.0.0",
+  "description": "Simple yet powerful library for building modern, component based and statically compiled web interfaces.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasSchwarzer/nicolas1.1.git"
+  },
+  "keywords": [
+    "nicolas",
+    "component",
+    "compile",
+    "browser",
+    "framework"
+  ],
+  "author": "Nicolas Wan <nbwansjtu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NicolasSchwarzer/nicolas1.1/issues"
+  },
+  "homepage": "https://github.com/NicolasSchwarzer/nicolas1.1#readme"
+}
