@@ -1,6 +1,6 @@
 {
   "name": "nicolas1.1",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple yet powerful library for building modern, component based and statically compiled web interfaces.",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/NicolasSchwarzer/nicolas1.1/issues"
   },
-  "homepage": "https://github.com/NicolasSchwarzer/nicolas1.1#readme"
+  "homepage": "https://github.com/NicolasSchwarzer/nicolas1.1#readme",
+  "dependencies": {
+    "clean-css": "^3.4.19",
+    "html-minifier": "^3.0.2",
+    "js-beautify": "^1.6.4",
+    "jsdom": "^9.4.5",
+    "uglify-js": "^2.7.3"
+  }
 }
