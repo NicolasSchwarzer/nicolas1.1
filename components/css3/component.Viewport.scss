@@ -1,0 +1,24 @@
+html, body {
+	
+	position: relative;
+	height: 100%;
+}
+
+body {
+	
+	background-color: #fbf9fe;
+	overflow: hidden;
+}
+
+body > div[data-nicolas-component="Viewport"] {
+
+	opacity: 0;
+	@include flex;
+	@include flex-direction(column);
+	@include align-items(stretch);
+
+	&.nicolas-ready {
+
+		opacity: 1;
+	}
+}

@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'FontAwesomeNicolasComponentSearch';
+  src: url('component.Search/font-awesome-4.6.3/fontawesome-webfont.eot?v=4.6.3');
+  src: url('component.Search/font-awesome-4.6.3/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('component.Search/font-awesome-4.6.3/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('component.Search/font-awesome-4.6.3/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('component.Search/font-awesome-4.6.3/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('component.Search/font-awesome-4.6.3/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+div[data-nicolas-component="Search"] {
+
+	height: 52px;
+	@include flex-direction(column);
+	@include align-items(stretch);
+	
+	>div[data-nicolas-component="layout.Card"] {
+
+		@include flex;
+
+		div.nicolas-component-search-off {
+
+			padding: 10px;
+			background-color: #f6f6f6;
+			@include flex-direction(column);
+			@include align-items(stretch);
+
+			>div {
+
+				font-family: FontAwesomeNicolasComponentSearch;
+				font-size: 16px;
+				color: #9a9a9e;
+				background-color: #fff;
+				border: 1px solid #e6e6e6;
+				@include border-radius(5px);
+				@include flex;
+				@include flex-direction;
+				@include align-items(center);
+				@include justify-content(center);
+			}
+		}
+
+		div.nicolas-component-search-on {
+
+			@include flex-direction;
+			@include align-items;
+
+			>form:first-child {
+
+				padding: 10px 0 10px 10px;
+				background-color: #f6f6f6;
+				@include flex;
+				@include flex-direction(column);
+				@include align-items;
+
+				>div {
+
+					background-color: #fff;
+					overflow: hidden;
+					border: 1px solid #e6e6e6;
+					@include border-radius(5px);
+					@include flex;
+					@include flex-direction;
+					@include align-items;
+
+					>div:first-child {
+
+						width: 32px;
+						font-size: 16px;
+						color: #9a9a9e;
+						font-family: FontAwesomeNicolasComponentSearch;
+						@include flex-direction;
+						@include align-items(center);
+						@include justify-content(center);
+					}
+
+					>input:last-child {
+
+						line-height: 16px;
+						font-size: 16px;
+						@include flex;
+						@include flex-direction;
+						@include align-items(center);
+
+						&::-webkit-input-placeholder {
+
+							padding-top: 2px;
+							color: #9a9a9e;
+						}
+
+						&::-webkit-search-cancel-button {
+
+							display: none;
+						}
+					}
+				}
+			}
+
+			>div:last-child {
+
+				width: 60px;
+				font-size: 18px;
+				color: #3cc51f;
+				background-color: #f6f6f6;
+				@include flex-direction;
+				@include align-items(center);
+				@include justify-content(center);
+			}
+		}
+	}
+}

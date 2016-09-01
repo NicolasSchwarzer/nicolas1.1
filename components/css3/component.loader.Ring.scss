@@ -1,0 +1,81 @@
+$absoluteFitDelta: 1px;
+$animationDuration: 2s;
+$animationDelay: 1.5s;
+
+$defaultBorderWidth: 30px;
+$defaultColor: #fff;
+$defaultBorderColor: #0dc5c1;
+
+@include keyframes(nicolas-component-loader-ring-infinitely-rotate) {
+	
+	0% {
+
+		@include transform(rotateX(0) rotateY(0) rotateZ(-90deg));
+	}
+
+	100% {
+
+		@include transform(rotateX(0) rotateY(0) rotateZ(270deg));
+	}
+}
+
+div[data-nicolas-component="loader.Ring"] {
+
+	background-color: $defaultColor;
+	overflow: hidden;
+	@include align-items(center);
+	@include justify-content(center);
+
+	&.nicolas-component-loader-ring-hide {
+
+		display: none;
+	}
+
+	>div {
+
+		position: relative;
+
+		>div {
+
+			display: block;
+
+			>div {
+
+				width: 100%;
+				height: 50%;
+				border: 0 solid;
+				border-bottom-width: 0 !important;
+				@include transform-origin(center bottom);
+				display: block;
+			}
+		}
+
+		>div:first-child {
+
+			position: absolute;
+			left: $absoluteFitDelta;
+			top: $absoluteFitDelta;
+			right: $absoluteFitDelta;
+			bottom: $absoluteFitDelta;
+
+			>div {
+
+				border-width: $defaultBorderWidth;
+				border-color: $defaultBorderColor;
+				@include animation(nicolas-component-loader-ring-infinitely-rotate $animationDuration ease infinite backwards);
+			}			
+		}
+
+		>div:last-child {
+
+			@include absolute-fit;
+
+			>div {
+
+				border-width: $defaultBorderWidth + 2;
+				border-color: $defaultColor;
+				@include animation(nicolas-component-loader-ring-infinitely-rotate $animationDuration ease $animationDelay infinite backwards);
+			}
+		}
+	}
+}

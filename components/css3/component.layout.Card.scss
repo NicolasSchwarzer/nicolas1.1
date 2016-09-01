@@ -1,0 +1,20 @@
+div[data-nicolas-component="layout.Card"] {
+	
+	>div.nicolas-component-layout-card-container {
+
+		@include absolute-fit;
+		display: block;
+
+		>* {
+
+			opacity: 0;
+			@include absolute-fit;
+
+			&.nicolas-component-layout-card-activate {
+
+				opacity: 1;
+				z-index: 1;
+			}
+		}
+	}
+}

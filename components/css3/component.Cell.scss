@@ -1,0 +1,12 @@
+div[data-nicolas-component="Cell"] {
+	
+	background-color: #fff;
+
+	&.nicolas-component-cell-active {
+
+		&:active {
+
+			background-color: #ececec;
+		}
+	}
+}

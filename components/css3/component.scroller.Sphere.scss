@@ -1,0 +1,37 @@
+div[data-nicolas-component="scroller.Sphere"] {
+	
+	overflow: hidden;
+   	@include flex-direction(column);
+   	@include align-items;
+   	@include justify-content(center);
+
+   	>.nicolas-component-scroller-sphere-container {
+
+		position: relative;
+		height: 38px;
+		border-top: 1px solid #adb0a7;
+		border-bottom: 1px solid #adb0a7;
+		@include transform-style;
+		@include perspective(1200px);
+		@include perspective-origin;
+
+		>div {
+
+			@include absolute-fit;
+			font-size: 24px;
+			opacity: 0.3;
+			overflow: hidden;
+			@include transition-duration(0s);
+			@include transition-timing-function(cubic-bezier(0.1, 0.57, 0.1, 1));
+			@include transform-origin(center center -110px);
+			@include backface-visibility;
+			@include align-items(center);
+			@include justify-content(center);
+
+			&.nicolas-component-scroller-sphere-closest {
+
+				opacity: 1;
+			}
+		}
+   	}
+}

@@ -1,0 +1,72 @@
+div[data-nicolas-component="Picker"] {
+	
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0);
+	z-index: 999;
+	@include transition-property(background);
+	@include transition-duration(0.5s);
+	@include transform(translateY(100%));
+	display: block;
+
+	>.nicolas-component-picker-body {
+
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #fff;
+		@include transition-duration(0.5s);
+		@include transform(translateY(100%));
+		display: block;
+
+		>.nicolas-component-picker-body-top {
+
+			@include flex-direction(column);
+			@include align-items;
+		}
+
+		>.nicolas-component-picker-body-middle {
+
+			height: 216px;
+			@include flex-direction;
+			@include align-items;
+
+			>.nicolas-component-picker-column-flex {
+
+				@include flex;
+			}
+		}
+
+		>.nicolas-component-picker-body-bottom {
+
+			@include flex-direction(column);
+			@include align-items;
+		}
+	}
+
+	&.nicolas-component-picker-open {
+
+		background: rgba(0, 0, 0, 0.35);
+		@include transform(translateY(0));
+
+		>.nicolas-component-picker-body {
+
+			@include transform(translateY(0));
+		}
+	}
+
+	&.nicolas-component-picker-close {
+
+		background: rgba(0, 0, 0, 0);
+		@include transform(translateY(0));
+
+		>.nicolas-component-picker-body {
+
+			@include transform(translateY(100%));
+		}
+	}
+}

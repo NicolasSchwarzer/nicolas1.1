@@ -1,0 +1,21 @@
+div[data-nicolas-component="Map"] {
+
+	position: relative;
+	
+	>.nicolas-component-map-container {
+
+		@include absolute-fit;
+		display: block;
+
+		>.nicolas-component-map-body {
+
+			width: 100%;
+			height: 100%;
+		}
+
+		* {
+
+			display: block;
+		}
+	}	
+}

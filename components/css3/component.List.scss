@@ -1,0 +1,66 @@
+$animationDuration: 0.7s;
+
+@include keyframes(nicolas-component-list-page-fade-out) {
+	
+	0% {
+
+		opacity: 0;
+	}
+
+	100% {
+
+		opacity: 1;
+	}
+}
+
+div[data-nicolas-component="List"] {
+	
+	background-color: #fff;
+	@include flex-direction(column);
+	@include align-items;
+
+	>div[data-nicolas-component="Scroller"] {
+
+		@include flex;
+
+		div.nicolas-component-list-page {
+
+			opacity: 0;
+			@include flex-direction(column);
+			@include align-items;
+
+			&.nicolas-component-list-page-fade-out {
+
+				@include animation(nicolas-component-list-page-fade-out $animationDuration forwards);
+			}
+
+			&.nicolas-component-list-page-hidden {
+
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			>div.nicolas-component-list-item {
+
+				@include flex-direction(column);
+				@include align-items;
+
+				&.nicolas-component-list-item-hidden {
+
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		}
+
+		[data-nicolas-attr-list-loader] {
+
+			@include absolute-fit;
+
+			&.nicolas-component-list-page-fade-out {
+
+				@include animation(nicolas-component-list-page-fade-out $animationDuration reverse forwards);
+			}
+		}
+	}
+}

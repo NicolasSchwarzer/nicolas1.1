@@ -1,0 +1,72 @@
+$animationDuration: 0.4s;
+
+@include keyframes(nicolas-component-spa-slider-from-center-to-left) {
+	
+	0% {
+
+		@include transform(translateX(0) translateY(0) translateZ(0));
+	}
+
+	100% {
+
+		opacity: 0.9;
+		@include transform(translateX(-20%) translateY(0) translateZ(0));
+	}
+}
+
+@include keyframes(nicolas-component-spa-slider-from-center-to-right) {
+	
+	0% {
+
+		@include box-shadow(-3px 0 10px #9d9d9d);
+		@include transform(translateX(0) translateY(0) translateZ(0));
+	}
+
+	100% {
+
+		@include box-shadow(-3px 0 10px #9d9d9d);
+		@include transform(translateX(100%) translateY(0) translateZ(0));
+	}
+}
+
+div[data-nicolas-component="spa.Slider"] {
+	
+	@include absolute-fit;
+	@include transition-duration(0s);
+	@include transition-timing-function(cubic-bezier(0.1, 0.57, 0.1, 1));
+	background-color: #fbf9fe;
+	display: block;
+
+	>div.nicolas-component-spa-slider-container {
+
+		@include absolute-fit;
+		@include flex-direction(column);
+		@include align-items;
+	}
+
+	>div.nicolas-component-spa-slider-shelter {
+
+		@include absolute-fit;
+		background: rgba(0, 0, 0, 0);
+	}
+
+	&.nicolas-component-spa-slider-from-center-to-left {
+
+		@include animation(nicolas-component-spa-slider-from-center-to-left $animationDuration linear forwards);
+	}
+
+	&.nicolas-component-spa-slider-from-left-to-center {
+
+		@include animation(nicolas-component-spa-slider-from-center-to-left $animationDuration linear reverse forwards);
+	}
+
+	&.nicolas-component-spa-slider-from-center-to-right {
+
+		@include animation(nicolas-component-spa-slider-from-center-to-right $animationDuration linear forwards);
+	}
+
+	&.nicolas-component-spa-slider-from-right-to-center {
+
+		@include animation(nicolas-component-spa-slider-from-center-to-right $animationDuration linear reverse forwards);
+	}
+}

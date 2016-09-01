@@ -1,0 +1,17 @@
+div[data-nicolas-component="Scroller"] {
+
+	>div.nicolas-component-scroller-container {
+
+		display: block;
+		overflow: hidden;
+		@include absolute-fit;
+
+		>div.nicolas-component-scroller-body {
+
+			min-height: 100%;
+			@include transition-duration(0s);
+			@include transition-timing-function(cubic-bezier(0.1, 0.57, 0.1, 1));
+			display: block;
+		}
+	}
+}
