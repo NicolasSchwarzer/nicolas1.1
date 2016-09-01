@@ -1,0 +1,29 @@
+@mixin text-size-adjust($value: none) {
+	
+	-webkit-text-size-adjust: $value;
+	text-size-adjust: $value;
+}
+
+@mixin box-sizing($value: border-box) {
+	
+	-webkit-box-sizing: $value;
+	box-sizing: $value;
+}
+
+@mixin appearance($value: none) {
+	
+	-webkit-appearance: $value;
+	appearance: $value;
+}
+
+@mixin border-radius($radius: 0) {
+	
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin background-size($size: contain) {
+	
+	-webkit-background-size: $size;
+	background-size: $size;
+}

@@ -1,0 +1,9 @@
+@mixin weui-cell-arrow($length: 16px) {
+	
+	width: $length;
+	height: $length;
+	border-width: $length / 4 $length / 4 0 0;
+	border-color: #c8c8cd;
+	border-style: solid;
+	@include transform(rotate(45deg));
+}

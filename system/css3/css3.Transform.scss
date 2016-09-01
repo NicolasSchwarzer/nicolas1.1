@@ -1,0 +1,38 @@
+@mixin transform-origin($origin: center center) {
+	
+	-webkit-transform-origin: $origin;
+	transform-origin: $origin;
+}
+
+@mixin transform($config) {
+	
+	-webkit-transform: $config;
+	transform: $config;
+}
+
+// @param $style: flat || preserve-3d
+@mixin transform-style($style: preserve-3d) {
+	
+	-webkit-transform-style: $style;
+	transform-style: $style;
+}
+
+@mixin perspective($length) {
+
+	-webkit-perspective: $length;
+	perspective: $length;
+}
+
+// @param $origin: x-axis y-axis
+@mixin perspective-origin($origin: center center) {
+
+	-webkit-perspective-origin: $origin;
+	perspective-origin: $origin;
+}
+
+// @param $visibility: visible || hidden
+@mixin backface-visibility($visibility: hidden) {
+
+	-webkit-backface-visibility: $visibility;
+	backface-visibility: $visibility;
+}

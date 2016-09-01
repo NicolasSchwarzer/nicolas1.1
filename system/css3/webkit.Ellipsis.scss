@@ -1,0 +1,14 @@
+// @param $lineHeight: line height
+// @param $line: [1 ~ Infinity]
+@mixin overflow-ellipsis($lineHeight: 20px, $line: 1) {
+
+	height: $lineHeight * $line;
+	line-height: $lineHeight;
+	display: -webkit-box;
+	@include flex-direction(column);
+	-webkit-line-clamp: $line;
+	word-wrap: break-word;
+	word-break: break-word;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

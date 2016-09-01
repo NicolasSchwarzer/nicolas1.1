@@ -1,0 +1,74 @@
+@mixin display-flex {
+
+    display: -webkit-box;
+    display: flex;
+}
+
+// @param $direction: row || column
+@mixin flex-direction($direction: row) {
+
+    flex-direction: $direction;
+
+    @if $direction == column {
+
+        -webkit-box-orient: vertical;
+    }
+    @else {
+
+        -webkit-box-orient: horizontal;
+    }
+}
+
+// if flex-direction is row, align vertical
+// if flex-direction is column, align horizontal
+// @param $align: stretch || flex-start || flex-end || center
+@mixin align-items($align: stretch) {
+
+    align-items: $align;
+
+    @if $align == flex-start {
+
+        -webkit-box-align: start;
+    }
+    @else if $align == flex-end {
+
+        -webkit-box-align: end;
+    }
+    @else {
+
+        -webkit-box-align: $align;
+    }
+}
+
+// if flex-direction is row, justify horizontal
+// if flex-direction is column, justify vertical
+// @param $justify: flex-start || flex-end || space-between || center
+@mixin justify-content($justify: flex-start) {
+
+    justify-content: $justify;  
+
+    @if $justify == flex-start {
+
+        -webkit-box-pack: start;
+    }
+    @else if $justify == flex-end {
+
+        -webkit-box-pack: end;
+    }
+    @else if $justify == space-between {
+
+        -webkit-box-pack: justify;
+    }
+    @else {
+
+        -webkit-box-pack: $justify;
+    }
+}
+
+// weight
+// @param $flex: 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8
+@mixin flex($flex: 1) {
+
+    -webkit-box-flex: $flex;
+    flex: $flex;
+}

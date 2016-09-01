@@ -1,0 +1,93 @@
+html, body {
+
+    font-family: sans-serif;
+    font-weight: normal;
+    @include text-size-adjust;
+}
+
+body {
+
+    color: #333333;
+    cursor: default;
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(stretch);
+
+    * {
+
+        @include display-flex;
+    }
+}
+
+html, body, div,
+input, textarea,
+h1, h2, h3, h4, h5, h6,
+dialog, p,
+form, button {
+
+    margin: 0;
+    padding: 0;
+}
+
+button, dialog {
+
+    background-color: #fff;
+}
+
+img, input, textarea, button {
+
+    border: 0;
+}
+
+input, textarea {
+    
+    @include appearance;
+    @include border-radius;
+}
+
+a {
+
+    color: #333333;
+    text-decoration: none;
+}
+
+*:focus {
+
+    outline: none;
+}
+
+*, *:after, *:before {
+
+    @include box-sizing;
+}
+
+input, textarea, select {
+
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+textarea {
+
+    resize: none;
+}
+
+*, *:after, *:before {
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+input, textarea {
+
+    -webkit-user-select: text;
+}
+
+div[data-nicolas-component] {
+
+    position: relative;
+}
