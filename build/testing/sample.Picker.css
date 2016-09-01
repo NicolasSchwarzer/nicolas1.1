@@ -1,0 +1,239 @@
+html, body {
+  font-family: sans-serif;
+  font-weight: normal;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  color: #333333;
+  cursor: default;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+body * {
+  display: -webkit-box;
+  display: flex;
+}
+
+html, body, div,
+input, textarea,
+h1, h2, h3, h4, h5, h6,
+dialog, p,
+form, button {
+  margin: 0;
+  padding: 0;
+}
+
+button, dialog {
+  background-color: #fff;
+}
+
+img, input, textarea, button {
+  border: 0;
+}
+
+input, textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+*, *:after, *:before {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+input, textarea {
+  -webkit-user-select: text;
+}
+
+div[data-nicolas-component] {
+  position: relative;
+}
+
+div[data-nicolas-component="scroller.Sphere"] {
+  overflow: hidden;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  justify-content: center;
+  -webkit-box-pack: center;
+}
+div[data-nicolas-component="scroller.Sphere"] > .nicolas-component-scroller-sphere-container {
+  position: relative;
+  height: 38px;
+  border-top: 1px solid #adb0a7;
+  border-bottom: 1px solid #adb0a7;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: center center;
+  perspective-origin: center center;
+}
+div[data-nicolas-component="scroller.Sphere"] > .nicolas-component-scroller-sphere-container > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 24px;
+  opacity: 0.3;
+  overflow: hidden;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+  transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+  -webkit-transform-origin: center center -110px;
+  transform-origin: center center -110px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+}
+div[data-nicolas-component="scroller.Sphere"] > .nicolas-component-scroller-sphere-container > div.nicolas-component-scroller-sphere-closest {
+  opacity: 1;
+}
+
+div[data-nicolas-component="Picker"] {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 999;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  display: block;
+}
+div[data-nicolas-component="Picker"] > .nicolas-component-picker-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  display: block;
+}
+div[data-nicolas-component="Picker"] > .nicolas-component-picker-body > .nicolas-component-picker-body-top {
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+div[data-nicolas-component="Picker"] > .nicolas-component-picker-body > .nicolas-component-picker-body-middle {
+  height: 216px;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+div[data-nicolas-component="Picker"] > .nicolas-component-picker-body > .nicolas-component-picker-body-middle > .nicolas-component-picker-column-flex {
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+div[data-nicolas-component="Picker"] > .nicolas-component-picker-body > .nicolas-component-picker-body-bottom {
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+div[data-nicolas-component="Picker"].nicolas-component-picker-open {
+  background: rgba(0, 0, 0, 0.35);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+div[data-nicolas-component="Picker"].nicolas-component-picker-open > .nicolas-component-picker-body {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+div[data-nicolas-component="Picker"].nicolas-component-picker-close {
+  background: transparent;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+div[data-nicolas-component="Picker"].nicolas-component-picker-close > .nicolas-component-picker-body {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: #fbf9fe;
+  overflow: hidden;
+}
+
+body > div[data-nicolas-component="Viewport"] {
+  opacity: 0;
+  -webkit-box-flex: 1;
+  flex: 1;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+body > div[data-nicolas-component="Viewport"].nicolas-ready {
+  opacity: 1;
+}
+
+[data-nicolas-component="Viewport"] {
+  background-color: #fff;
+}
+
+.content {
+  height: 200px;
+  font-size: 18px;
+  border-bottom: 1px solid #f00;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+}

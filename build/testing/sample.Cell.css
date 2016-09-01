@@ -1,0 +1,137 @@
+html, body {
+  font-family: sans-serif;
+  font-weight: normal;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  color: #333333;
+  cursor: default;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+body * {
+  display: -webkit-box;
+  display: flex;
+}
+
+html, body, div,
+input, textarea,
+h1, h2, h3, h4, h5, h6,
+dialog, p,
+form, button {
+  margin: 0;
+  padding: 0;
+}
+
+button, dialog {
+  background-color: #fff;
+}
+
+img, input, textarea, button {
+  border: 0;
+}
+
+input, textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+*, *:after, *:before {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+input, textarea {
+  -webkit-user-select: text;
+}
+
+div[data-nicolas-component] {
+  position: relative;
+}
+
+div[data-nicolas-component="Cell"] {
+  background-color: #fff;
+}
+div[data-nicolas-component="Cell"].nicolas-component-cell-active:active {
+  background-color: #ececec;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: #fbf9fe;
+  overflow: hidden;
+}
+
+body > div[data-nicolas-component="Viewport"] {
+  opacity: 0;
+  -webkit-box-flex: 1;
+  flex: 1;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+body > div[data-nicolas-component="Viewport"].nicolas-ready {
+  opacity: 1;
+}
+
+div.container {
+  -webkit-box-flex: 1;
+  flex: 1;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  justify-content: center;
+  -webkit-box-pack: center;
+}
+div.container div[data-nicolas-component="Cell"] {
+  height: 120px;
+  font-size: 36px;
+  border: 1px solid #000;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+}

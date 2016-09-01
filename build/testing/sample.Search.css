@@ -1,0 +1,252 @@
+html, body {
+  font-family: sans-serif;
+  font-weight: normal;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  color: #333333;
+  cursor: default;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+body * {
+  display: -webkit-box;
+  display: flex;
+}
+
+html, body, div,
+input, textarea,
+h1, h2, h3, h4, h5, h6,
+dialog, p,
+form, button {
+  margin: 0;
+  padding: 0;
+}
+
+button, dialog {
+  background-color: #fff;
+}
+
+img, input, textarea, button {
+  border: 0;
+}
+
+input, textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+*, *:after, *:before {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+input, textarea {
+  -webkit-user-select: text;
+}
+
+div[data-nicolas-component] {
+  position: relative;
+}
+
+div[data-nicolas-component="layout.Card"] > div.nicolas-component-layout-card-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+div[data-nicolas-component="layout.Card"] > div.nicolas-component-layout-card-container > * {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+div[data-nicolas-component="layout.Card"] > div.nicolas-component-layout-card-container > *.nicolas-component-layout-card-activate {
+  opacity: 1;
+  z-index: 1;
+}
+
+@font-face {
+  font-family: 'FontAwesomeNicolasComponentSearch';
+  src: url("component.Search/font-awesome-4.6.3/fontawesome-webfont.eot?v=4.6.3");
+  src: url("component.Search/font-awesome-4.6.3/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("component.Search/font-awesome-4.6.3/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("component.Search/font-awesome-4.6.3/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("component.Search/font-awesome-4.6.3/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("component.Search/font-awesome-4.6.3/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+div[data-nicolas-component="Search"] {
+  height: 52px;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+div[data-nicolas-component="Search"] > div[data-nicolas-component="layout.Card"] {
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+div[data-nicolas-component="Search"] > div[data-nicolas-component="layout.Card"] div.nicolas-component-search-off {
+  padding: 10px;
+  background-color: #f6f6f6;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+div[data-nicolas-component="Search"] > div[data-nicolas-component="layout.Card"] div.nicolas-component-search-off > div {
+  font-family: FontAwesomeNicolasComponentSearch;
+  font-size: 16px;
+  color: #9a9a9e;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-flex: 1;
+  flex: 1;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+}
+div[data-nicolas-component="Search"] > div[data-nicolas-component="layout.Card"] div.nicolas-component-search-on {
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+div[data-nicolas-component="Search"] > div[data-nicolas-component="layout.Card"] div.nicolas-component-search-on > form:first-child {
+  padding: 10px 0 10px 10px;
+  background-color: #f6f6f6;
+  -webkit-box-flex: 1;
+  flex: 1;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+div[data-nicolas-component="Search"] > div[data-nicolas-component="layout.Card"] div.nicolas-component-search-on > form:first-child > div {
+  background-color: #fff;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-flex: 1;
+  flex: 1;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+div[data-nicolas-component="Search"] > div[data-nicolas-component="layout.Card"] div.nicolas-component-search-on > form:first-child > div > div:first-child {
+  width: 32px;
+  font-size: 16px;
+  color: #9a9a9e;
+  font-family: FontAwesomeNicolasComponentSearch;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+}
+div[data-nicolas-component="Search"] > div[data-nicolas-component="layout.Card"] div.nicolas-component-search-on > form:first-child > div > input:last-child {
+  line-height: 16px;
+  font-size: 16px;
+  -webkit-box-flex: 1;
+  flex: 1;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  align-items: center;
+  -webkit-box-align: center;
+}
+div[data-nicolas-component="Search"] > div[data-nicolas-component="layout.Card"] div.nicolas-component-search-on > form:first-child > div > input:last-child::-webkit-input-placeholder {
+  padding-top: 2px;
+  color: #9a9a9e;
+}
+div[data-nicolas-component="Search"] > div[data-nicolas-component="layout.Card"] div.nicolas-component-search-on > form:first-child > div > input:last-child::-webkit-search-cancel-button {
+  display: none;
+}
+div[data-nicolas-component="Search"] > div[data-nicolas-component="layout.Card"] div.nicolas-component-search-on > div:last-child {
+  width: 60px;
+  font-size: 18px;
+  color: #3cc51f;
+  background-color: #f6f6f6;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: #fbf9fe;
+  overflow: hidden;
+}
+
+body > div[data-nicolas-component="Viewport"] {
+  opacity: 0;
+  -webkit-box-flex: 1;
+  flex: 1;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+body > div[data-nicolas-component="Viewport"].nicolas-ready {
+  opacity: 1;
+}
+
+p.content {
+  padding: 10px;
+  line-height: 36px;
+  font-size: 24px;
+  background-color: #fff;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
