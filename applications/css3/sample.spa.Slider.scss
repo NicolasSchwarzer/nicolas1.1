@@ -1,0 +1,8 @@
+div.content {
+	
+	font-size: 128px;
+	color: #fff;
+	@include flex;
+	@include align-items(center);
+	@include justify-content(center);
+}

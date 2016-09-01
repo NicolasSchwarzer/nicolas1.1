@@ -1,0 +1,34 @@
+header, footer {
+	
+	height: 50px;
+	font-size: 24px;
+	color: #fff;
+	@include flex-direction;
+	@include align-items(center);
+	@include justify-content(center);
+}
+
+header {
+	
+	background-color: #0dc5c1;
+}
+
+footer {
+	
+	background-color: #8c78b4;
+}
+
+div[data-nicolas-component="List"] {
+	
+	@include flex;
+}
+
+div.content {
+	
+	height: 150px;
+	border-bottom: 1px solid #000;
+	font-size: 72px;;
+	@include flex-direction;
+	@include align-items(center);
+	@include justify-content(center);
+}

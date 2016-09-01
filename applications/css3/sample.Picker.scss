@@ -1,0 +1,13 @@
+[data-nicolas-component="Viewport"] {
+
+	background-color: #fff;
+}
+
+.content {
+
+	height: 200px;
+	font-size: 18px;
+	border-bottom: 1px solid #f00;
+	@include align-items(center);
+	@include justify-content(center);
+}

@@ -1,0 +1,8 @@
+p {
+
+	font-size: 36px;
+	@include flex;
+	@include flex-direction(column);
+	@include align-items(center);
+	@include justify-content(center);
+}

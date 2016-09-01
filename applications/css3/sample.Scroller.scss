@@ -1,0 +1,36 @@
+div[data-nicolas-component="Scroller"] {
+	
+	@include flex;
+}
+
+header, footer {
+	
+	height: 50px;
+	font-size: 24px;
+	color: #fff;
+	@include flex-direction;
+	@include align-items(center);
+	@include justify-content(center);
+}
+
+header {
+	
+	background-color: #0dc5c1;
+}
+
+footer {
+	
+	background-color: #8c78b4;
+}
+
+div.content {
+	
+	height: 300px;
+	border-bottom: 1px solid #f00;
+	background-color: #000;
+	font-size: 72px;
+	color: #fff;
+	@include flex-direction;
+	@include align-items(center);
+	@include justify-content(center);
+}

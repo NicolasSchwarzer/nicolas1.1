@@ -1,0 +1,31 @@
+div[data-nicolas-component="layout.Card"] {
+	
+	@include flex;
+
+	>div.nicolas-component-layout-card-container {
+
+		>* {
+
+			font-size: 72px;
+			@include align-items(center);
+			@include justify-content(center);
+		}
+	}
+}
+
+footer {
+	
+	height: 72px;
+	@include flex-direction;
+	@include align-items;
+
+	>button {
+
+		height: 72px;
+		line-height: 72px;
+		font-size: 36px;
+		@include flex;
+		@include flex-direction(column);
+		@include align-items(center);
+	}
+}

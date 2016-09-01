@@ -1,0 +1,17 @@
+div.container {
+	
+	@include flex;
+	@include flex-direction(column);
+	@include align-items;
+	@include justify-content(center);
+
+	div[data-nicolas-component="Cell"] {
+
+		height: 120px;
+		font-size: 36px;
+		border: 1px solid #000;
+		@include flex-direction(column);
+		@include align-items(center);
+		@include justify-content(center);
+	}
+}
