@@ -16,5 +16,29 @@
 	</a>
 </p>
 
-# nicolas1.1
-Simple yet powerful library for building modern, component based and statically compiled web interfaces.
+## Nicolas1.1
+
+Nicolas1.1 is a simple yet powerful library for building modern, component based and statically compiled web interfaces. Core features include:
+
+- Component-oriented development style with tooling support
+- Zero DOM operation infinite list component
+- Simple and light data binding mechanism
+- Merge software engineering into web interfaces development
+- Lean and extensible core
+- Fast without the need for complex optimization
+
+Note that Nicolas1.1 only supports [ES5-compliant browsers](http://kangax.github.io/compat-table/es5/) (IE8 and below are not supported).
+
+## Requires
+
+Nicolas1.1 has an unique compiling mechanism, it assembles HTML, Javascript and CSS files via certain principles. Thus it requires:
+
+- [Install Node.js](https://nodejs.org/en/) (JavaScript runtime built on [Chrome's V8 JavaScript engine](https://developers.google.com/v8/))
+- [Install Compass](http://www.jianshu.com/p/69c828b6911c) (open-source CSS Authoring Framework)
+- [Install Apache](http://www.jianshu.com/p/622542921751) (world's most used web server software) [optional]
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2016 Nicolas Wan
