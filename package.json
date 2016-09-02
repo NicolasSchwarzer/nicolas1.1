@@ -1,6 +1,6 @@
 {
   "name": "nicolas1.1",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Simple yet powerful library for building modern, component based and statically compiled web interfaces.",
   "main": "index.js",
   "scripts": {

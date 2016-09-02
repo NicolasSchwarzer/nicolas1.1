@@ -31,7 +31,7 @@ Note that Nicolas1.1 only supports [ES5-compliant browsers](http://kangax.github
 
 ## Requires
 
-Nicolas1.1 has an unique compiling mechanism, it assembles HTML, Javascript and CSS files via certain principles. Thus it requires:
+Nicolas1.1 has an unique compiling mechanism, it assembles HTML, Javascript and CSS files via certain principle, which requires:
 
 - [Install Node.js](https://nodejs.org/en/) (JavaScript runtime built on [Chrome's V8 JavaScript engine](https://developers.google.com/v8/))
 - [Install Compass](http://www.jianshu.com/p/69c828b6911c) (open-source CSS Authoring Framework)
