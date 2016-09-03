@@ -46,7 +46,7 @@ For how to install and use nicolas1.1, please look at [nicolas1.1 cookbook](http
 
 - For further updates on code, please follow my GitHub repository [nicolas1.1](https://github.com/NicolasSchwarzer/nicolas1.1)
 - For further updates on cookbook, please follow my blog [NicolasWan](http://www.jianshu.com/users/0ed0a3f2200c/)
-- For any issues, please report at [nicolas1.1/issues](https://github.com/NicolasSchwarzer/nicolas1.1/issues) or contact my email address `nbwansjtu@gmail.com`
+- For any issues, please report at [nicolas1.1/issues](https://github.com/NicolasSchwarzer/nicolas1.1/issues) or contact my email address [nbwansjtu@gmail.com](mailto:nbwansjtu@gmail.com)
 
 ## License
 
