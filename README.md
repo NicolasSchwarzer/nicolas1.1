@@ -22,6 +22,7 @@ Nicolas1.1 is a simple yet powerful library for building modern, component based
 
 - Component-oriented development style with tooling support
 - Zero DOM operation infinite list component
+- [SPA (Single Page Application)](https://en.wikipedia.org/wiki/Single-page_application) component with page state persistence
 - Custom event mechanism for component lifecycle and custom events
 - Simple and light data binding mechanism
 - Merge software engineering into web interfaces development
