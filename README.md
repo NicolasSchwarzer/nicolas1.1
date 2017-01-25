@@ -53,4 +53,4 @@ For how to install and use nicolas1.1, please look at [nicolas1.1 cookbook](http
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2016 Nicolas Wan
+Copyright (c) 2016-present Nicolas Wan
